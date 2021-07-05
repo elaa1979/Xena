@@ -40,10 +40,6 @@ namespace Xena.Infrastructure.Persistence.Configuration
                 .HasMaxLength(255);
 
             builder
-                .Property(x => x.Caption)
-                .HasMaxLength(255);
-
-            builder
                 .Property(x => x.Address)
                 .HasMaxLength(255);
 

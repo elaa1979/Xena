@@ -11,7 +11,6 @@ namespace Xena.Application.Commands.Users.Register
         public string Password { get; set; }
         public string ConfirmPassword { get; set; }
         public string Photo { get; set; }
-        public string Caption { get; set; }
         public DateTime DOB { get; set; }
         public string Address { get; set; }
         public string Phone { get; set; }
