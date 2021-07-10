@@ -1,6 +1,8 @@
 using AutoMapper;
 using Xena.Application.Abstractions.Repositories;
+using Xena.Application.Abstractions.AmazonServices;
 using Xena.Domain.Users;
+using Xena.Infrastructure.AmazonServices;
 using Xena.Infrastructure.Persistence;
 using Xena.Infrastructure.Persistence.Repositories;
 using Microsoft.AspNetCore.Builder;
@@ -28,6 +30,11 @@ namespace Xena.Infrastructure
             return services;
         }
 
+        public static IServiceCollection AddAmazonServices(this IServiceCollection services, IConfiguration config)
+        {
+            services.AddSingleton<IAmazonService, AmazonService>();
+            return services;
+        }
 
         public static void UseDatabaseMigration(this IApplicationBuilder app)
         {

@@ -31,6 +31,7 @@ namespace Xena.Api
             services.AddJwtAuthentication(Configuration);
             services.AddApplication();
             services.AddPersistance(Configuration);
+            services.AddAmazonServices(Configuration);
             services.AddMemoryCache();
             services.AddCors();
             services.AddHttpContextAccessor();
