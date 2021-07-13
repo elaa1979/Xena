@@ -6,6 +6,7 @@ using Xena.Domain;
 using Xena.Domain.Users;
 using Xena.Domain.Roles;
 using Xena.Domain.Logs;
+using Xena.Domain.Amazon;
 using Microsoft.EntityFrameworkCore;
 
 namespace Xena.Infrastructure.Persistence
@@ -19,6 +20,11 @@ namespace Xena.Infrastructure.Persistence
         public DbSet<RolePermission> RolePermissions { get; set; }
         public DbSet<UserRole> UserRoles { get; set; }
         public DbSet<Log> Logs { get; set; }
+
+        public DbSet<AmazonAdGroup> AmazonAdGroups { get; set; }
+        public DbSet<AmazonCampaign> AmazonCampaigns { get; set; }
+        public DbSet<AmazonKeyword> AmazonKeywords { get; set; }
+        public DbSet<AmazonProfile> AmazonProfiles { get; set; }
 
         public XenaContext(DbContextOptions<XenaContext> options) : base(options)
         {

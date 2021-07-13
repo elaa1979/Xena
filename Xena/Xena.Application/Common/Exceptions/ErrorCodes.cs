@@ -19,7 +19,11 @@ namespace Xena.Application.Common.Exceptions
 
         public static string FolderNotFound = "Folder not found";
 
-        public static string ArticleNotExists = "Article don't exist";
+        public static string AmazonProfileNotExists = "Amazon Profile don't exist";
+        public static string AmazonKeywordNotExists = "Amazon Keyword don't exist";
+        public static string AmazonAdGroupNotExists = "Amazon AdGroup don't exist";
+        public static string AmazonCampaignNotExists = "Amazon Campaign don't exist";
+
         public static string CategoryNotExists = "Caregoy don't exist";
         public static string InternalServerError = "Something went wrong, please try again later";
         public static string FileNotUploaded = "File not uploaded";

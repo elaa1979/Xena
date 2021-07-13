@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using Xena.Application.Common.Models;
+using Newtonsoft.Json;
+
+namespace Xena.Application.Queries.Amazon.Profiles
+{
+    public class ProfileDto
+    {
+        public long profileId { get; set; }
+        public string countryCode { get; set; }
+        public string currencyCode { get; set; }
+        public decimal dailyBudget { get; set; }
+        public string timezone { get; set; }
+        public AccountInfo accountInfo { get; set; }
+    }
+
+    public class AccountInfo
+    {
+        public string marketplaceStringId { get; set; }
+        public string id { get; set; }
+        public string type { get; set; }
+        public string name { get; set; }
+        public bool validPaymentMethod { get; set; }
+    }
+}
+
+
